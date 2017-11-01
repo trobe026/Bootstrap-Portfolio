@@ -13,12 +13,30 @@ a {
   color: #eee;
 }
 
+p {
+  margin: 10px;
+
+}
+
 img {
-  width: 50%;
+  width: 35%;
+  margin-right: 15px;
+  border: 1px solid #328CC1;
+}
+
+h2 {
+  padding: 0 0 5px 5px;
+  margin: 5px;
+  border-bottom: 1px solid #328CC1;
 }
 
 aside {
   text-align: center;
+
+}
+
+#profile-pic {
+  float:left;
 }
 
 .navbar {
@@ -39,8 +57,20 @@ aside {
 
 .col-md-6, .col-md-3 {
   background-color: #0B3C5D;
+
 }
+
+.col-md-3 {
+  padding-bottom: 25px;
+}
+
+
 
 .footer {
   background-color: #0B3C5D;
+  position: fixed;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
