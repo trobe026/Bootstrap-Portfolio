@@ -1,0 +1,29 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background: #0B3C5D url(../images/swirl_pattern.png) repeat fixed center;
+  width: 100%;
+}
+
+a {
+  color: #eee;
+}
+
+img {
+  width: 50%;
+}
+
+.navbar {
+    background-color: #0B3C5D;
+}
+
+.navbar-toggle .icon-bar {
+  color: #eee;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #d8e6f3;
+}
