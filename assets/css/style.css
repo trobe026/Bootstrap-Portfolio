@@ -6,6 +6,7 @@ html {
 body {
   background: #0B3C5D url(../images/swirl_pattern.png) repeat fixed center;
   width: 100%;
+  color: #eee;
 }
 
 a {
@@ -14,6 +15,10 @@ a {
 
 img {
   width: 50%;
+}
+
+aside {
+  text-align: center;
 }
 
 .navbar {
@@ -26,4 +31,16 @@ img {
 
 .navbar-toggle .icon-bar {
     background-color: #d8e6f3;
+}
+
+.icon {
+  width: 20%;
+}
+
+.col-md-6, .col-md-3 {
+  background-color: #0B3C5D;
+}
+
+.footer {
+  background-color: #0B3C5D;
 }
