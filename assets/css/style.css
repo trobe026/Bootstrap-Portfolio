@@ -19,16 +19,23 @@ a {
 }
 
 
-
-
 /*main sections*/
 .col-sm-6 {
   background-color: #0B3C5D;
   margin: 30px 30px;
   padding: 15px 5px;
+  -webkit-animation: mymove 1s 1;
+  animation: mymove 1s 1;
 }
 
-
+@-webkit-keyframes mymove {
+  from   {left: 400px;}
+  to  {left: 0px;}
+}
+@keyframes mymove {
+    from   {left: 400px;}
+    to {left: 0px;}
+}
 
 
 
@@ -36,13 +43,14 @@ a {
 
 .navbar {
   -webkit-animation-name: toblue;
-  -webkit-animation-duration: 8s;
+  -webkit-animation-duration: 7s;
   animation-name: toblue;
-  animation-duration: 8s;
+  animation-duration: 7s;
   background-color: #1D2731;
   animation-iteration-count: 8;
   animation-delay: 2s;
   animation-direction: alternate;
+  animation-timing-function: ease-out;
 }
 
 @-webkit-keyframes toblue {
@@ -109,6 +117,17 @@ h3 {
   background-color: #0B3C5D;
   padding: 15px 5px;
   margin-top: 30px;
+  -webkit-animation: mymove2 1s 1;
+  animation: mymove2 1s 1;
+}
+
+@-webkit-keyframes mymove2 {
+  from   {right: 400px;}
+  to  {right: 0px;}
+}
+@keyframes mymove2 {
+    from   {right: 400px;}
+    to {right: 0px;}
 }
 
 
@@ -135,6 +154,10 @@ p {
   border: 1px solid #328CC1;
 }
 
+#profile-pic:hover {
+  transform: rotate(360deg);
+  transition: 0.90s;
+}
 
 
 
@@ -195,7 +218,7 @@ textarea {
 /*footer css*/
 
 #port-footer {
-  background-color: #0B3C5D;
+  background-color: #1D2731;
   height: 100px;
   position: absolute;
   bottom: 0;
@@ -208,6 +231,16 @@ textarea {
   background-color: #1D2731;
   height: 100px;
   position:fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  text-align: center;
+}
+
+#contact-footer {
+  background-color: #1D2731;
+  height: 100px;
+  position:absolute;
   bottom: 0;
   left:0;
   width: 100%;
@@ -242,20 +275,23 @@ textarea {
     padding: 10px 00;
     margin: 30px;
     width: 80%;
+    margin-bottom: 70px;
   }
 
   .icon {
     width: 10%;
   }
-}
-
-@media only screen and (max-width: 480px){
-  body {
-      margin-bottom: 200x;
-  }
 
   .footer {
     position: absolute;
+  }
+
+}
+
+@media only screen and (max-width: 480px){
+
+  body {
+      margin-bottom: 200px;
   }
 
   .navbar {
