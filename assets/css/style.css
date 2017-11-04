@@ -5,40 +5,127 @@ html {
 }
 
 body {
+  font-family: 'Raleway', sans-serif;
   background: #0B3C5D url(../images/swirl_pattern.png) repeat fixed center;
   width: 100%;
   min-height: 400px;
   margin-bottom: 100px;
   clear: both;
-  color: #328CC1;
+  color: #eee;
 }
 
 a {
   color: #328CC1;
 }
 
-section {
-  margin-bottom: 200px;
-}
+
 
 
 /*main sections*/
-.col-md-6 {
+.col-sm-6 {
   background-color: #0B3C5D;
+  margin: 30px 30px;
   padding: 15px 5px;
 }
+
+
+
+
+
+/*Header css*/
+
+.navbar {
+  -webkit-animation-name: toblue;
+  -webkit-animation-duration: 8s;
+  animation-name: toblue;
+  animation-duration: 8s;
+  background-color: #1D2731;
+  animation-iteration-count: 8;
+  animation-delay: 2s;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes toblue {
+  from {background-color: #1D2731;}
+  to {background-color: #328CC1;}}
+
+.navbar-brand {
+  text-align: left;
+  width: 110%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5em;
+  color: #eee;
+  background-color:#328CC1;
+}
+
+.navbar-toggle .icon-bar {
+  color: #328CC1;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #d8e6f3;
+    color: #328CC1;
+}
+
+.navbar-right>li>a{
+  font-family: 'Raleway', sans-serif;
+  color: #eee;
+}
+
+.navbar-right>li>a:hover {
+  background-color: #328CC1;
+}
+
+
+
+/*Connect with Me css*/
+
+aside {
+  text-align: center;
+  width: 100%;
+
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  padding: 0 0 5px 5px;
+  margin: 5px;
+  border-bottom: 1px solid #328CC1;
+}
+
+.icon {
+  max-width: 20%;
+  margin: 0 10px;
+  -webkit-transition: all 1.0s ease;
+          transition: all 1.0s ease;
+}
+
+.icon:hover {
+  -webkit-transform:scale(1.25);
+          transform:scale(1.25);
+        }
+
+.col-sm-3 {
+  background-color: #0B3C5D;
+  padding: 15px 5px;
+  margin-top: 30px;
+}
+
 
 
 /*About me css*/
 
 h2 {
+  font-family: 'Raleway', sans-serif;
   margin: 5px;
   padding: 5px;
   border-bottom: 1px solid #328CC1;
 
 }
 p {
+  font-family: 'Ubuntu', sans-serif;
   margin: 10px;
+  color: #eee;
 }
 
 #profile-pic {
@@ -51,82 +138,16 @@ p {
 
 
 
-
-/*Header css*/
-.navbar {
-    background-color: #0B3C5D;
-}
-
-.navbar-brand {
-  font-size: 2.5em;
-  color: #328CC1;
-}
-
-.navbar-toggle .icon-bar {
-  color: #328CC1;
-}
-
-.navbar-toggle .icon-bar {
-    background-color: #d8e6f3;
-    color: #328CC1;
-}
-
-
-
-
-/*Connect with Me css*/
-
-aside {
-  text-align: center;
-  width: 100%;
-}
-
-h3 {
-  padding: 0 0 5px 5px;
-  margin: 5px;
-  border-bottom: 1px solid #328CC1;
-}
-
-.icon {
-  max-width: 20%;
-}
-
-.col-md-3 {
-  background-color: #0B3C5D;
-  padding: 15px 5px;
-}
-
-/*footer css*/
-
-#port-footer {
-  background-color: #0B3C5D;
-  height: 100px;
-  position: absolute;
-  bottom: 0;
-  left:0;
-  width: 100%;
-  text-align: center;
-}
-
-.footer {
-  background-color: #0B3C5D;
-  height: 100px;
-  position:fixed;
-  bottom: 0;
-  left:0;
-  width: 100%;
-  text-align: center;
-}
-
-
 /*Portfolio page css*/
 
 h4 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5em;
   text-align: center;
   position: absolute;
   width: 100%;
-  background-color: #eee;
-  color: #00F;
+  background-color: #328CC1;
+  color: #eee;
   bottom: 0;
   left: 0;
 }
@@ -136,6 +157,13 @@ h4 {
   width: 40%;
   float: left;
   margin: 20px;
+}
+
+.img:hover {
+  -webkit-transform:scale(1.2);
+          transform:scale(1.2);
+  -webkit-transition: all 1.2s ease;
+          transition: all 1.2s ease;
 }
 
 img {
@@ -153,11 +181,37 @@ form {
 
 input {
   margin: 15px 5px 15px 20px;
+  color: #111;
 }
 
 textarea {
   width: 80%;
   margin-top: 15px;
+  color: #111;
+}
+
+
+
+/*footer css*/
+
+#port-footer {
+  background-color: #0B3C5D;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer {
+  background-color: #1D2731;
+  height: 100px;
+  position:fixed;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  text-align: center;
 }
 
 
@@ -166,27 +220,50 @@ textarea {
 
 @media only screen and (max-width: 992px) {
 
-  .col-md-3 {
+  .col-sm-6 {
+    max-width: 100%;
+    }
+
+    .col-sm-3 {
     padding: 10px 00;
     margin: 30px auto;
-    width: 100%;
-  }
-
-  .icon {
-    max-width: 5%;
+    width: 30%;
   }
 
 
 }
-@media only screen and (max-width: 768px){
-  body {
-      margin-bottom: 400px;
+@media only screen and (max-width: 769px) {
+
+  .col-sm-6 {
+    max-width: 80%;
+    }
+
+    .col-sm-3 {
+    padding: 10px 00;
+    margin: 30px;
+    width: 80%;
   }
 
+  .icon {
+    width: 10%;
+  }
 }
 
 @media only screen and (max-width: 480px){
   body {
       margin-bottom: 200x;
   }
+
+  .footer {
+    position: absolute;
+  }
+
+  .navbar {
+    background-color: #0B3C5D;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+
 }
