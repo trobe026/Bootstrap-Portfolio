@@ -5,7 +5,7 @@ var url = require('url');
 var express= require('express');
 
 // Set our port to 8080
-var PORT = 8080;
+var PORT = process.env.PORT || 8080;
 
 // Create our server
 var app = express();
