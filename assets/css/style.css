@@ -6,7 +6,7 @@ html {
 
 body {
   font-family: 'Raleway', sans-serif;
-  background: #0B3C5D url(../images/swirl_pattern.png) repeat fixed center;
+  background: #0B3C5D url(../images/swirl_pattern.jpeg) repeat fixed center;
   width: 100%;
   min-height: 400px;
   margin-bottom: 100px;
@@ -203,7 +203,6 @@ img {
 
 form {
   margin: 10px auto;
-  float: left;
   text-align: center;
 }
 
@@ -213,9 +212,10 @@ input {
 }
 
 textarea {
-  width: 80%;
   margin-top: 15px;
   color: #111;
+  width: 95%;
+
 }
 
 
@@ -287,9 +287,6 @@ textarea {
     width: 10%;
   }
 
-  .footer {
-    position: absolute;
-  }
 
 }
 

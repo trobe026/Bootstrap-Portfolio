@@ -1,0 +1,23 @@
+{
+  "name": "Bootstrap-Portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "httpserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trobe026/Bootstrap-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trobe026/Bootstrap-Portfolio/issues"
+  },
+  "homepage": "https://github.com/trobe026/Bootstrap-Portfolio#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
